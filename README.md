@@ -31,6 +31,7 @@ external/activity-graph/
 - React + TypeScript
 - shadcn/ui
 - TanStack Table
+- Recharts (for example charts)
 
 ## Installation (as a submodule)
 
@@ -79,3 +80,50 @@ export default function Page() {
 ## License
 
 MIT
+
+---
+
+## Charts: Example (AreaChart)
+
+This module includes a self‑contained example chart component using Recharts: `components/ExampleAreaChart.tsx`.
+
+### Install Recharts (peer)
+
+```bash
+pnpm add recharts
+```
+
+### Add chart color tokens (host app CSS)
+
+Add CSS variables that the chart references. You can place these in your global CSS (e.g., `app/globals.css`).
+
+```css
+@layer base {
+  :root {
+    --chart-1: oklch(0.646 0.222 41.116);
+    --chart-2: oklch(0.6 0.118 184.704);
+  }
+
+  .dark {
+    --chart-1: oklch(0.488 0.243 264.376);
+    --chart-2: oklch(0.696 0.17 162.48);
+  }
+}
+```
+
+### Use the example chart
+
+```tsx
+import ExampleAreaChart from "@/external/activity-graph/components/ExampleAreaChart";
+
+export default function Demo() {
+  return (
+    <div className="rounded-md border p-4">
+      <h2 className="mb-2 font-semibold">Area Chart</h2>
+      <ExampleAreaChart />
+    </div>
+  );
+}
+```
+
+The example reads `--chart-1` and `--chart-2` for colors. Adjust tokens or the component to match your theme.
