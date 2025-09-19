@@ -76,10 +76,14 @@ export function buildChannelSeries(
 	const channels = Object.keys(channelPalette) as InteractionChannel[];
 	const counts: Record<string, Record<InteractionChannel, number>> = {};
 	for (const dk of dayKeys) {
-		counts[dk] = channels.reduce(
-			(acc, ch) => ((acc[ch] = 0), acc),
+		const init = channels.reduce(
+			(acc, ch) => {
+				acc[ch] = 0;
+				return acc;
+			},
 			{} as Record<InteractionChannel, number>,
 		);
+		counts[dk] = init;
 	}
 	for (const e of filtered) {
 		const dk = new Date(e.timestamp).toISOString().slice(0, 10);
