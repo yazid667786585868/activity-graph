@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elektronika Industri - Spesialisasi</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="spesialisasi.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <i class="fas fa-microchip"></i>
+        Elektronika Industri
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="spesialisasi.html" class="active">Spesialisasi</a>
+        <a href="proyek.html">PJBL</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="Our Team.html" title="Our Team">
+          <i class="fas fa-users"></i>
+        </a>
+      </div>
+      <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </div>
+      <div class="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header class="header">
+      <h1 data-aos="fade-up">Pilih Spesialisasi Yang kamu Inginkan</h1>
+      <p data-aos="fade-up" data-aos-delay="200">
+        Jurusan Teknik Elektronika Industri memiliki 3 spesialisasi. Klik untuk
+        mengetahui lebih lanjut!
+      </p>
+    </header>
+
+    <!-- Section Title -->
+    <div class="section-title">
+      <h2 data-aos="fade-up">Bidang Keahlian Unggulan</h2>
+      <p data-aos="fade-up" data-aos-delay="100">
+        Pilih jalur karir yang sesuai dengan minat dan bakatmu
+      </p>
+    </div>
+
+    <!-- Spesialisasi Grid -->
+    <section class="spesialisasi-container">
+      <!-- IoT Card -->
+      <div
+        class="spesialisasi-card iot"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <a href="iot.html" class="card-image">
+          <img src="images/Bacground IoT/iot.jpg" alt="Internet of Things" />
+          <div class="card-icon">
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="card-badge"><i class="fas fa-fire"></i> Populer</div>
+        </a>
+        <div class="card-content">
+          <h2 class="card-title">IoT (Internet of Things)</h2>
+          <p class="card-text">
+            Spesialisasi yang mempelajari teknologi sensor, mikrokontroler, dan
+            sistem monitoring jarak jauh. Kembangkan solusi pintar untuk dunia
+            yang terhubung.
+          </p>
+          <button class="card-button" data-modal="iot-modal">
+            Lanjut <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Robotic Card -->
+      <div
+        class="spesialisasi-card robotic"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <a href="robotic.html" class="card-image">
+          <img src="images/Bacground Robotik/robotic.jpg" alt="Robotic" />
+          <div class="card-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="card-badge"><i class="fas fa-star"></i> Terfavorit</div>
+        </a>
+        <div class="card-content">
+          <h2 class="card-title">Robotic</h2>
+          <p class="card-text">
+            Fokus pada pembuatan dan pengendalian robot berbasis logika serta
+            sistem otomatisasi. Pelajari cara merancang robot untuk berbagai
+            kebutuhan.
+          </p>
+          <button class="card-button" data-modal="robotic-modal">
+            Lanjut <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- IC Card -->
+      <div class="spesialisasi-card ic" data-aos="fade-up" data-aos-delay="300">
+        <a href="ic.html" class="card-image">
+          <img src="images/Bacground Ic/ic.jpg" alt="Industrial Control" />
+          <div class="card-icon">
+            <i class="fas fa-industry"></i>
+          </div>
+          <div class="card-badge">
+            <i class="fas fa-briefcase"></i> Karir Cerah
+          </div>
+        </a>
+        <div class="card-content">
+          <h2 class="card-title">Industrial Control</h2>
+          <p class="card-text">
+            Spesialisasi pengendalian industri menggunakan sistem kendali
+            otomatis seperti PLC dan sensor industri. Kuasai teknologi yang
+            menggerakkan pabrik modern.
+          </p>
+          <button class="card-button" data-modal="ic-modal">
+            Lanjut <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- IoT Modal -->
+    <div id="iot-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-close"><i class="fas fa-times"></i></div>
+        <div class="modal-header">
+          <img src="images/Bacground IoT/iot.jpg" alt="Internet of Things" />
+          <div class="modal-header-overlay">
+            <h2>Internet of Things (IoT)</h2>
+            <p>Teknologi untuk dunia yang terhubung</p>
+          </div>
+        </div>
+        <div class="modal-body">
+          <p>
+            IoT adalah teknologi yang menghubungkan perangkat elektronik ke
+            internet, sehingga alat seperti lampu atau mesin bisa dikontrol dan
+            mengirim data secara otomatis dari jarak jauh melalui aplikasi.
+          </p>
+
+          <p>
+            Dengan IoT, Anda akan mempelajari cara merancang sistem yang dapat
+            memantau, mengontrol, dan mengoptimalkan berbagai proses secara
+            real-time.
+          </p>
+
+          <div class="modal-features">
+            <div class="feature-item">
+              <i class="fas fa-microchip"></i>
+              <span>Mikrokontroler & Sensor</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-cloud"></i>
+              <span>Cloud Computing</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-mobile-alt"></i>
+              <span>Aplikasi Mobile</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>Keamanan IoT</span>
+            </div>
+          </div>
+
+          <p>
+            Lulusan spesialisasi IoT memiliki peluang karir yang luas di
+            berbagai industri seperti smart home, smart city, pertanian pintar,
+            kesehatan, dan banyak lagi.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="iot.html" class="card-button"
+            >Pelajari Lebih Lanjut <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Robotic Modal -->
+    <div id="robotic-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-close"><i class="fas fa-times"></i></div>
+        <div class="modal-header">
+          <img src="images/Bacground Robotik/robotic.jpg" alt="Robotics" />
+          <div class="modal-header-overlay">
+            <h2>Robotika</h2>
+            <p>Teknologi otomatisasi masa depan</p>
+          </div>
+        </div>
+        <div class="modal-body">
+          <p>
+            Spesialisasi Robotika berfokus pada perancangan, pengembangan, dan
+            pengendalian robot untuk berbagai aplikasi. Bidang ini menggabungkan
+            pengetahuan elektronika, mekanika, dan pemrograman untuk menciptakan
+            sistem otomatis yang dapat melakukan tugas-tugas kompleks.
+          </p>
+
+          <p>
+            Dalam spesialisasi ini, Anda akan mempelajari cara merancang,
+            membangun, dan memprogram robot dengan berbagai tingkat
+            kompleksitas, dari robot sederhana hingga sistem robotik industri
+            yang canggih.
+          </p>
+
+          <div class="modal-features">
+            <div class="feature-item">
+              <i class="fas fa-cogs"></i>
+              <span>Sistem Mekanik</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-code"></i>
+              <span>Pemrograman Robot</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-brain"></i>
+              <span>Kecerdasan Buatan</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-eye"></i>
+              <span>Robotic Desainer</span>
+            </div>
+          </div>
+
+          <p>
+            Lulusan spesialisasi Robotika dapat berkarir di industri manufaktur,
+            otomotif, kesehatan, pertanian, dan banyak sektor lain yang
+            mengadopsi teknologi robotik untuk meningkatkan efisiensi dan
+            produktivitas.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="robotic.html" class="card-button"
+            >Pelajari Lebih Lanjut <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- IC Modal -->
+    <div id="ic-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-close"><i class="fas fa-times"></i></div>
+        <div class="modal-header">
+          <img src="images/Bacground Ic/ic.jpg" alt="Industrial Control" />
+          <div class="modal-header-overlay">
+            <h2>Industrial Control (IC)</h2>
+            <p>Sistem kendali untuk industri modern</p>
+          </div>
+        </div>
+        <div class="modal-body">
+          <p>
+            Industrial Control (IC) adalah spesialisasi yang mempelajari sistem
+            kendali otomatis untuk aplikasi industri. Bidang ini mencakup
+            teknologi seperti Programmable Logic Controller (PLC), Distributed
+            Control System (DCS), dan SCADA yang digunakan untuk mengotomatisasi
+            proses industri.
+          </p>
+
+          <p>
+            Dalam spesialisasi ini, Anda akan mempelajari cara merancang,
+            mengimplementasikan, dan memelihara sistem kendali yang mengatur
+            operasi pabrik dan fasilitas industri lainnya.
+          </p>
+
+          <div class="modal-features">
+            <div class="feature-item">
+              <i class="fas fa-server"></i>
+              <span>Sistem PLC</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-network-wired"></i>
+              <span>Jaringan Industri</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-bolt"></i>
+              <span>Kelistrikan sederhana</span>
+            </div>
+          </div>
+
+          <p>
+            Lulusan spesialisasi IC sangat dibutuhkan di berbagai sektor
+            industri seperti manufaktur, minyak dan gas, pembangkit listrik,
+            pengolahan air, dan banyak lagi. Karir di bidang ini menawarkan
+            stabilitas dan prospek gaji yang menjanjikan.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="ic.html" class="card-button"
+            >Pelajari Lebih Lanjut <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Created By:</h3>
+          <p>
+            Website ini dikembangkan oleh sekelompok tim sebagai bentuk
+            kreativitas dan pembelajaran, dengan tujuan menjelaskan spesialisasi
+            Elektronika Industri
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Tautan Cepat</h3>
+          <p><a href="index.html">Beranda</a></p>
+          <p><a href="spesialisasi.html">Spesialisasi</a></p>
+          <p><a href="proyek.html">PJBL</a></p>
+          <p><a href="about.html">Tentang Kami</a></p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Hubungi Kami</h3>
+          <div class="contact-info">
+            <i class="fas fa-map-marker-alt"></i>
+            <span
+              >Kawasan Industri MM2100 JI. Kalimantan Blok DD O 1-1, Danau
+              Indah, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat
+              17530</span
+            >
+          </div>
+          <div class="contact-info">
+            <i class="fas fa-phone"></i>
+            <span>(021) 8998-3961</span>
+          </div>
+          <div class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <span>smkmitraindustrimm21000smkind-mm2100.sch.id</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Devolope my.Teknik Elektronika Industri. All rights
+      </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

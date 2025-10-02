@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kumpulan Proyek Elektronika Industri</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="proyek.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+   <!-- Navbar -->
+   <nav class="navbar">
+    <a href="index.html" class="brand">
+      <i class="fas fa-microchip"></i>
+      Elektronika Industri
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="spesialisasi.html">Spesialisasi</a>
+      <a href="proyek.html" class="active">PJBL</a>
+      <a href="about.html">Tentang Kami</a>
+      <a href="Our Team.html" title="Our Team">
+        <i class="fas fa-users"></i>
+      </a>
+    </div>
+     
+    <div class="theme-toggle">
+      <i class="fas fa-moon"></i>
+    </div>
+    <div class="mobile-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+
+    <!-- Header -->
+    <header class="header">
+      <h1 data-aos="fade-up">Kumpulan Proyek Elektronika Industri</h1>
+      <p data-aos="fade-up" data-aos-delay="100">
+        Temukan berbagai hasil karya terbaik dari setiap spesialisasi
+      </p>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+      <h2 class="filter-title" data-aos="fade-up">
+        Filter Berdasarkan Spesialisasi
+      </h2>
+      <div class="filter-buttons" data-aos="fade-up" data-aos-delay="200">
+        <button class="filter-btn all active" data-filter="all">
+          <i class="fas fa-th-large"></i>
+          Semua Proyek
+        </button>
+        <button class="filter-btn iot" data-filter="iot">
+          <i class="fas fa-wifi"></i>
+          IoT
+        </button>
+        <button class="filter-btn robotik" data-filter="robotik">
+          <i class="fas fa-robot"></i>
+          Robotik
+        </button>
+        <button class="filter-btn ic" data-filter="ic">
+          <i class="fas fa-industry"></i>
+          Industrial Control
+        </button>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+      <div class="projects-grid">
+        <!-- IoT Projects -->
+        <div
+          class="project-card"
+          data-category="iot"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="project-image">
+            <img
+              src="images/Project IoT/monitoring suhu.png"
+              alt="Monitoring Suhu & Kelembaban"
+            />
+            <div class="project-badge badge-iot">IoT</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Monitoring Suhu & Kelembaban</h3>
+            <p class="project-description">
+              Sistem monitoring real-time untuk mengukur suhu dan kelembaban
+              ruangan dengan notifikasi otomatis via smartphone menggunakan
+              platform Blynk.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">ESP32</span>
+              <span class="tech-tag">DHT22</span>
+              <span class="tech-tag">Blynk</span>
+              <span class="tech-tag">WiFi</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card"
+          data-category="iot"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="project-image">
+            <img src="images/Project IoT/Led cube.jpg" alt="Led Cube" />
+            <div class="project-badge badge-iot">IoT</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Led Cube</h3>
+            <p class="project-description">
+              Led Cube untuk pembelajran Sistem Binner berbasis IC shift register 
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">ESP32</span>
+              <span class="tech-tag">LED</span>
+              <span class="tech-tag">Arduino Nano</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card"
+          data-category="iot"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="project-image">
+            <img src="images/Project IoT/doorlock.jpg" alt="Smart Security System" />
+            <div class="project-badge badge-iot">IoT</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Smart Door Lock</h3>
+            <p class="project-description">
+              Smart Door Lock adalah sistem kunci pintu otomatis yang bekerja menggunakan
+               input password dari keypad dan dapat memberikan notifikasi jarak jauh melalui internet
+              Sistem ini dirancang untuk menggantikan kunci manual, sehingga pintu dapat dibuka atau dikunci secara lebih aman dan praktis.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Keypad</span>
+              <span class="tech-tag">Esp32</span>
+              <span class="tech-tag">Relay</span>
+              <span class="tech-tag">Blynk</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Robotik Projects -->
+        <div
+          class="project-card"
+          data-category="robotik"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="project-image">
+            <img src="images/Project Robotic/robot-arm.jpg" alt="Robot Arm Pick and Place" />
+            <div class="project-badge badge-robotik">Robotik</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Robot Arm Pick and Place</h3>
+            <p class="project-description">
+              Robot yang memindahkan objek barang dari satu tempat yang lain
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Kompresor</span>
+              <span class="tech-tag">Servo Motor</span>
+              <span class="tech-tag">Arm</span>
+              <span class="tech-tag">Power Supply</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card"
+          data-category="robotik"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="project-image">
+            <img src="images/Project Robotic/robot-linefollower.jpg" alt="Robot Line Follower" />
+            <div class="project-badge badge-robotik">Robotik</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Robot Line Follower</h3>
+            <p class="project-description">
+              jenis robot otomatis yang dirancang yang bergerak mengikuti garis
+              atau jalur hitam sebagai penunjuk arah
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Battrei</span>
+              <span class="tech-tag">Motor, Gear Box</span>
+              <span class="tech-tag">Sensor Infrared</span>
+              <span class="tech-tag">ESP32</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card"
+          data-category="robotik"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="project-image">
+            <img src="images/Project Robotic/robot_ondel-ondel.jpg" alt="Robot Ondel-ondel" />
+            <div class="project-badge badge-robotik">Robotik</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Robot Ondel-ondel</h3>
+            <p class="project-description">
+              Robot waiters atau pelayan yang di rancang khusus untuk melayani
+              dan mengantarkan makanan
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Motor Driver</span>
+              <span class="tech-tag">Battrei</span>
+              <span class="tech-tag">Gear Box</span>
+              <span class="tech-tag">Speaker</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Industrial Control Projects -->
+        <div
+          class="project-card"
+          data-category="ic"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="project-image">
+            <img
+              src="images/Project Ic/MPS (Module Production System).jpg"
+              alt="MPS (Module Production System)"
+            />
+            <div class="project-badge badge-ic">Industrial Control</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">MPS (Module Production System)</h3>
+            <p class="project-description">
+              Sistem packaging otomatis dengan PLC control, sensor photoelectric
+              untuk deteksi produk, dan conveyor belt untuk transportasi.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">CP1E PLC</span>
+              <span class="tech-tag">Proximity Sensor</span>
+              <span class="tech-tag">Conveyor Belt</span>
+              <span class="tech-tag">Robot Arm</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card"
+          data-category="ic"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="project-image">
+            <img
+              src="images/Project Ic/control panel1.jpg"
+              alt="Control Panel"
+            />
+            <div class="project-badge badge-ic">Industrial Control</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Control Panel</h3>
+            <p class="project-description">
+              alat atau sistem yang digunakan untuk memantau, mengendalikan, dan mengatur peralatan listrik atau mesin
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">MCB</span>
+              <span class="tech-tag">PLC</span>
+              <span class="tech-tag">Kontaktor</span>
+              <span class="tech-tag">relay<span>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="project-card"
+          data-category="ic"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="project-image">
+            <img
+              src="images/Project Ic/Trainer PLC Zen Omron.jpg"
+              alt="Trainer PLC Zen Omron"
+            />
+            <div class="project-badge badge-ic">Industrial Control</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Trainer PLC Zen Omron</h3>
+            <p class="project-description">
+              Sistem kontrol lampu lalu lintas pintar dengan PLC yang dapat
+              menyesuaikan timing berdasarkan program dengan waktu yang real-time
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Switch PLC Zen Omrom</span>
+              <span class="tech-tag">Led</span>
+              <span class="tech-tag">PCB</span>
+              <span class="tech-tag">Wire</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Created By:</h3>
+          <p>
+            Website ini dikembangkan oleh sekelompok tim sebagai bentuk kreativitas dan pembelajaran,
+             dengan tujuan menjelaskan spesialisasi Elektronika Industri
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Tautan Cepat</h3>
+          <p><a href="index.html">Beranda</a></p>
+          <p><a href="spesialisasi.html">Spesialisasi</a></p>
+          <p><a href="proyek.html">PJBL</a></p>
+          <p><a href="about.html">Tentang Kami</a></p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Hubungi Kami</h3>
+          <div class="contact-info">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Kawasan Industri MM2100 JI. Kalimantan Blok DD O 1-1, Danau Indah, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17530</span>
+          </div>
+          <div class="contact-info">
+            <i class="fas fa-phone"></i>
+            <span>(021) 8998-3961</span>
+          </div>
+          <div class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <span>smkmitraindustrimm21000smkind-mm2100.sch.id</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Devolope my Teknik Elektronika Industri. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
